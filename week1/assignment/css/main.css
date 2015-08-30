@@ -148,8 +148,9 @@ article h3 {
 }
 
 article p {
-    font-size: 0.8em;
+    font-size: 0.85em;
     line-height: 1.2em;
+    margin: 10px 0 10px 0;
 }
 
 .button {
@@ -163,7 +164,7 @@ article p {
 
 h3.button {
     margin: 0;
-    padding: 5px 25px 0 0;
+    padding: 7px 25px 0 0;
 }
 
 /* ==========================================================================
