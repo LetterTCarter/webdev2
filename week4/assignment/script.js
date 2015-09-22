@@ -18,7 +18,7 @@ var theThirdPilippic = {
 
 var speechArray = [theirFinestHour, quitIndia, theThirdPilippic];
 
-var yearBetweenSpeeches = quitIndia.year - theirFinestHour.year;
+var yearBetweenSpeeches = speechArray[1].year - speechArray[0].year;
 
 console.log(quitIndia.author + "'s speech and " + theirFinestHour.author + "'s speech are " + yearBetweenSpeeches + " years apart.");
 
@@ -27,13 +27,13 @@ document.getElementById('BtnDonate').addEventListener('click', function(){
 });
 
 document.getElementById('BtnChurchill').addEventListener('click', function(){
-  console.log("This speech was written by " + theirFinestHour.author + " in " + theirFinestHour.year + ". It is " + theirFinestHour.bce + " that this year is B.C.E.");
+  console.log("This speech was written by " + speechArray[0].author + " in " + speechArray[0].year + ". It is " + speechArray[0].bce + " that this year is B.C.E.");
 });
 
 document.getElementById('BtnGhandi').addEventListener('click', function(){
-  console.log("This speech was written by " + quitIndia.author + " in " + quitIndia.year + ". It is " + quitIndia.bce + " that this year is B.C.E.");
+  console.log("This speech was written by " + speechArray[1].author + " in " + speechArray[1].year + ". It is " + speechArray[1].bce + " that this year is B.C.E.");
 });
 
 document.getElementById('BtnDemosthenes').addEventListener('click', function(){
-  console.log("This speech was written by " + theThirdPilippic.author + " in " + theThirdPilippic.year + ". It is " + theThirdPilippic.bce + " that this year is B.C.E.");
+  console.log("This speech was written by " + speechArray[2].author + " in " + speechArray[2].year + ". It is " + speechArray[2].bce + " that this year is B.C.E.");
 });
