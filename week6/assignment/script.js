@@ -44,7 +44,7 @@ while(i < speechesArray.length) {
   i++
 }
 
-// used to check newest vs oldest speech on the page
+// used to set the value of oldest and newest speeches on the page
 newestYear = speechesArray[0].year;
 oldestYear = speechesArray[0].year;
 
