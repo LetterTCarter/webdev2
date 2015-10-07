@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+html { box-sizing: border-box; }
+
+*, *:before, *:after { box-sizing: inherit; }
+
+/* Global Styles */
+
+body {
+	font-family: "Open Sans", Verdana, Helvetica, sans-serif;
+	max-width: 70%;
+	margin: 0 auto;
+}
+
+.clickStyle {
+	background-color: #000;
+	color: #fff;
+	font-family: "Times New Roman", serif;
+	padding: 0.625em;
+	text-align: center;
+	-webkit-transition: color 2s, padding 2s; /* Safari */
+    transition: color 2s, padding 2s;
+}
