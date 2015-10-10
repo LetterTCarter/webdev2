@@ -55,7 +55,7 @@ document.getElementById('BtnDonate').addEventListener('click', function(){
   newHeading3 = document.createElement("h3");
 
   //Create new text node
-  h3Text = document.createTextNode("Thank you for your generous donation!");
+  h3Text = document.createTextNode("Thank you for your very generous donation!");
   //Adding the child node
   newHeading3.appendChild(h3Text);
   newHeading3.setAttribute('style', 'color: red');
