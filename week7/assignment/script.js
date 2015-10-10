@@ -18,13 +18,18 @@ var churchillSpeech = {
       'authorAge': '42'
     },
     speechesArray = [churchillSpeech, ghandiSpeech, demosthenesSpeech],
-    donatePrompt;
+    donatePrompt,
+    newHeading3,
+    h3Text,
+    articles = document.getElementsByTagName("article"),
+    ConsoleDisplay = document.getElementById("ConsoleDisplay");
 
 document.getElementById('BtnDonate').addEventListener('click', function(){
   //Code in here executes when the user clicks the "Donate" button.
   var donation = prompt("How much would you like to donate?");
-  var newHeading3;
-  var h3Text;
+
+  //Clear speech info
+  ConsoleDisplay.innerHTML = "";
 
   if(newHeading3 !== null){
     SideNav.removeChild(SideNav.lastChild);
@@ -43,6 +48,9 @@ document.getElementById('BtnDonate').addEventListener('click', function(){
 
   //Inserting the new nodes
   document.getElementById("SideNav").appendChild(newHeading3);
+  for(var i = 0; i < articles.length; i++) {
+    articles[i].className = "";
+  };
 } else if(donation >= 100) {
   newHeading3 = document.createElement("h3");
 
@@ -51,16 +59,20 @@ document.getElementById('BtnDonate').addEventListener('click', function(){
   //Adding the child node
   newHeading3.appendChild(h3Text);
   newHeading3.setAttribute('style', 'color: red');
-  
+
   //Inserting the new nodes
   document.getElementById("SideNav").appendChild(newHeading3);
+  
+  //Changing article elements to red based on donation
+  for(var i = 0; i < articles.length; i++) {
+    articles[i].className = "generous-donation";
+  };
 }
   
 });
 
 document.getElementById('BtnChurchill').addEventListener('click', function(){
   //Code in here executes when the user clicks the "Churchill" button.
-  var ConsoleDisplay = document.getElementById("ConsoleDisplay");
     ConsoleDisplay.innerHTML ='This speech was written by ' + speechesArray[0].author + ' in ' + speechesArray[0].year + ". <br><br>";
 
   if(speechesArray[0].yearIsBCE === true){
