@@ -1,18 +1,22 @@
-var divs = getElementsByTagName('div');
+var divs = document.getElementsByTagName('div');
 
 function resizeBox() {
-document.getElementById('exercise').onclick = function() {
-	if (document.getElementById('exercise').className == "clickStyle") {
-		document.getElementById('exercise').className = "";
+document.getElementById('box').onclick = function() {
+	if (document.getElementById('box').className == "clickStyle") {
+		document.getElementById('box').className = "";
 	} else {
-		document.getElementById('exercise').className = "clickStyle";
+		document.getElementById('box').className = "clickStyle";
 	};
 }};
 
-document.getElementById('exercise').addEventListener('click', function(){
+window.onload = function(){
+	resizeBox();
+}
+
+document.getElementById('box').addEventListener('click', function(){
   resizeBox();
 });
 
-document.getElementById('exercise2').addEventListener('click', function(){
+document.getElementById('box2').addEventListener('click', function(){
   resizeBox();
 });
