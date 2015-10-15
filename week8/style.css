@@ -14,18 +14,6 @@ body {
 
 div {
 	text-align: center;
-	width: 100px;
-	height: 100px;
 	background-color: #ccc;
-	float: left;
-	-webkit-transition: color 2s, width 2s, height 2s; /* Safari */
-    transition: color 2s, width 2s, height 2s;
-}
-
-.clickStyle {
-	background-color: #000;
-	width: 300px;
-	height: 300px;
-	-webkit-transition: color 2s, width 2s, height 2s; /* Safari */
-    transition: color 2s, width 2s, height 2s;
+	width: 60em;
 }
