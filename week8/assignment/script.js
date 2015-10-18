@@ -98,7 +98,7 @@ document.getElementById('BtnGhandi').addEventListener('click', function(){
   getAuthorAndYearString(ghandiSpeech);
 
   displayBCEString(ghandiSpeech);
-
+  
   getOldestOrYoungestString(ghandiSpeech);
 });
 
