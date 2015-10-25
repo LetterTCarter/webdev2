@@ -30,7 +30,7 @@ var
 
 function textLogger() {
 	box.onclick = function () {
-	textPrompt = prompt("Why don't you add some text?");
+	textPrompt = prompt("Why don't you change the text?");
 	box.innerHTML = textPrompt;
 	};
 };
