@@ -1,25 +1,9 @@
+
 'use strict';
 $(document).ready(function() {
-    textLogger();
+	document.getElementById('pbox').innerHTML = "jQuery is loaded and ready to go. Click to add some text.";
+	textLogger();
 });
-
-//Variables declared
-var 
-	textInsert,
-	paraText,
-	pText;
-
-//Simple text logging function adds text to the paragraph section.
-function textLogger() {
-	var textBox = document.getElementById('pbox');
-	textBox.onclick = function() {
-	textInsert = prompt("Type some text.");
-	paraText = document.createElement("p");
-	pText = document.createTextNode(textInsert);
-	paraText.appendChild(pText);
-	document.getElementById('pbox').appendChild(paraText);
-}
-};
 
 //Getting all of the divs in order to change their style on click
 var listOfDivs = document.getElementsByTagName('div');
@@ -33,5 +17,20 @@ function resizeBox() {
 		this.className = "bigBox";
 	} else {
 		this.className = "";
+	};
+};
+
+var 
+	newPara,
+    pText,
+    para,
+    paraText,
+    textPrompt,
+    box = document.getElementById('pbox');
+
+function textLogger() {
+	box.onclick = function () {
+	textPrompt = prompt("Why don't you add some text?");
+	box.innerHTML = textPrompt;
 	};
 };

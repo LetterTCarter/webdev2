@@ -105,6 +105,8 @@ div {
     background-color: yellow;
     margin: 0.625em;
     padding: 0.625em;
+    -webkit-transition: padding 2s; /* Safari */
+    transition: padding 2s;
 }
 
 .bigBox {
@@ -113,6 +115,8 @@ div {
     color: white;
     padding: 1em;
     background-color: red;
+    -webkit-transition: color 2s, padding 2s; /* Safari */
+    transition: color 2s, padding 2s;
 }
 
 
