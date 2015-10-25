@@ -96,10 +96,24 @@ textarea {
    ========================================================================== */
 
 
+body {
+    max-width: 60em;
+    margin: 0 auto;
+}
 
+div {
+    background-color: yellow;
+    margin: 0.625em;
+    padding: 0.625em;
+}
 
-
-
+.bigBox {
+    width: 300px;
+    text-align: center;
+    color: white;
+    padding: 1em;
+    background-color: red;
+}
 
 
 
