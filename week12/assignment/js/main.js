@@ -27,7 +27,7 @@ $('#navDiv').html(list);
       $(this).attr("id", "recipe" + j++);
       $(link).click(function() {
           $("#introPara").fadeOut("slow"),
-          $("#recipe0").animate({opacity: 1}, 2000);
+          $("#recipe0").animate({opacity: 1}, 4000);
       });
   });
 });
