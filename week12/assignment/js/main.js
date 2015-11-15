@@ -19,7 +19,7 @@ $('#navDiv').html(list);
   //select all of the articles
   var
     recipeArticles = $('article'),
-    link = $(this).html("<a name='bookmark" + i + "'></a>" + $(this).html()),
+    link = $(this).html("<a name='bookmark" + i++ + "'></a>" + $(this).html()),
     j = 0;
 
     //give each recipe article a unique ID
@@ -27,7 +27,7 @@ $('#navDiv').html(list);
       $(this).attr("id", "recipe" + j++);
       $(link).click(function() {
           $("#introPara").fadeOut("slow"),
-          $("#recipe1").animate({opacity: 1}, 2000, "swing");
+          $("#recipe0").animate({opacity: 1}, 2000);
       });
   });
 });

@@ -150,10 +150,6 @@ header h1 {
 }
 
 article {
-  position: absolute;
-  top: 100px;
-  right: 0px;
-  width: 75%;
   opacity: 0;
 }
 
