@@ -105,30 +105,33 @@ html {
 
 body {
   font-family: 'Roboto', Arial, sans-serif;
+  margin: 0 auto;
 }
 
 header {
   background: url("../img/headerimg.jpg") no-repeat center top;
   text-align: center;
+  width: 0px;
   height: 400px;
   font-family: 'Alfa Slab One', cursive, sans-serif;
   text-align: center;
-  color: #5b2707;
+  color: #301606;
   padding: 0.625em;
+  opacity: 0;
 }
 
 header h1 {
   margin: 0;
-  padding: 0 0 0.325em 0.625em;
+  padding-top: 300px;
   bottom: .325em;
   left: 0;
   font-weight: 900;
   text-transform: uppercase;
-  z-index: 1;
 }
 
 #contentDiv {
-  max-width: 60em;
+  position: relative;
+  width: 60em;
   margin: 0 auto;
 }
 
@@ -145,8 +148,14 @@ header h1 {
 }
 
 #contentDiv h2 {
-  padding-top: 0.625em;
+  padding-top: 0;
   margin: 0;
+  cursor: pointer;
+}
+
+#contentDiv h1 {
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .btn {
@@ -156,6 +165,34 @@ header h1 {
   padding: 0.325em;
   list-style-type: none;
   text-align: left;
+}
+
+#navDiv h3 {
+  cursor: pointer;
+}
+
+#navDiv li {
+  padding: 0.325em;
+  border: 1px solid #975506;
+}
+
+#navDiv a {
+  text-decoration: none;
+  color: #301606;
+}
+
+.hover {
+  font-family: 'Alfa Slab One', cursive, sans-serif;
+  background-color: #975506;
+  padding: 0.625em;
+  height: 50px;
+  text-transform: uppercase;
+  border: 1px solid #301606;
+}
+.clicked {
+  background-color: #fff;
+  text-transform: uppercase;
+  border: 1px solid #301606;
 }
 
 .clearfix {
