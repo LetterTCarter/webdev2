@@ -10,7 +10,7 @@ $(function () {
 		//create an li and a element that links to cooresponding recipe title
 		$('#navDiv').append('<a href="#recipe-' + i + '"><li>' + navText + '</li></a>').addClass('btn');
 
-		var //created for menu functionality
+		var //created for menu functionality, thanks Anthony. Your code is amazingly helpful.
 			$link = $('a[href="#recipe-' + i + '"]'),
 			$linkLi = $('a[href="#recipe-' + i + '"] li');
 		//click any link
@@ -23,7 +23,7 @@ $(function () {
 			//find the recipe that cooresponds to link and fade it in
 			$('#recipe-' + i).animate({opacity: 1}, 2000, function(){
 				$(this).addClass('current');//add class current
-        $('article h2').prepend("<h1>What a tasty choice!</h1>");
+        $('article').prepend("<h1>What a tasty choice!</h1>");
 			});
 		});
     //add hover class on link hover
@@ -31,11 +31,11 @@ $(function () {
       $(this).toggleClass('hover');
     });
   });
-  $('#navDiv h3').hover(function() {
+  $('#notHungry').hover(function() {
     $(this).toggleClass('hover'),
     $(this).click(function(){
       $('#contentDiv').fadeOut(2000);
-    });
+  });
   });
   animateHeader();
 });
