@@ -7,7 +7,7 @@ $(function () {
 		//assign a unique id to the h2s with the h2 text
 		$(this).parent().attr('id', 'recipe-' + i);
 		var navText = $(this).text();
-		//create an li and a element that links to cooresponding recipe title
+		//create an li and a element that links to correct recipe title
 		$('#navDiv').append('<a href="#recipe-' + i + '"><li>' + navText + '</li></a>').addClass('btn');
 
 		var //created for menu functionality, thanks Anthony. Your code is amazingly helpful.
@@ -26,22 +26,28 @@ $(function () {
         $('article').prepend("<h1>What a tasty choice!</h1>");
 			});
 		});
-    //add hover class on link hover
+    //add hover class on link hover.
     $linkLi.hover(function() {
       $(this).toggleClass('hover');
     });
   });
+
+  //fade the content out when clicked.
   $('#notHungry').hover(function() {
     $(this).toggleClass('hover'),
     $(this).click(function(){
       $('#contentDiv').fadeOut(2000);
   });
+
+  //reload page when header h1 is clicked
   $('header h1').click(function(){
     location.reload();
   });
   });
   animateHeader();
 });
+
+//simple animation for the header when the page loads
 function animateHeader() {
 	$("header").animate({
     width: "100%",
