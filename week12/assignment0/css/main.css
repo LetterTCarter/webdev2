@@ -127,6 +127,7 @@ header h1 {
   left: 0;
   font-weight: 900;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 #contentDiv {

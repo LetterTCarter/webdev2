@@ -15,12 +15,12 @@ $(function () {
 			$linkLi = $('a[href="#recipe-' + i + '"] li');
 		//click any link
 		$link.click(function(){
-			//look for class current, fade it out...
+			//fade the current recipe out.
 			$('.current').animate({opacity: 0}, 200, function(){
 				$(this).removeClass('current');//remove current class....
         $('article h1').detach();
 			});
-			//find the recipe that cooresponds to link and fade it in
+			//fade the chosen recipe in.
 			$('#recipe-' + i).animate({opacity: 1}, 2000, function(){
 				$(this).addClass('current');//add class current
         $('article').prepend("<h1>What a tasty choice!</h1>");
@@ -35,6 +35,9 @@ $(function () {
     $(this).toggleClass('hover'),
     $(this).click(function(){
       $('#contentDiv').fadeOut(2000);
+  });
+  $('header h1').click(function(){
+    location.reload();
   });
   });
   animateHeader();
