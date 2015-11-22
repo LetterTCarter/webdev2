@@ -97,6 +97,7 @@ textarea {
 
 html {
     box-sizing: border-box;
+    background-color: #000;
 }
 
 *, *:before, *:after {
@@ -159,6 +160,11 @@ nav ul li a:hover {
   background-color: #a71f1a;
 }
 
+#mainContent {
+  max-width: 30%;
+  margin: 0 auto;
+}
+
 #home {
   text-align: center;
 }
@@ -179,7 +185,8 @@ p {
 .state h3 {
     margin: 0;
     padding: 0.3125em;
-    color: #777;
+    color: #1d347f;
+    font-size: 2em;
 }
 
 #quizArea {

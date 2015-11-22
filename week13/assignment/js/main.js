@@ -16,10 +16,13 @@ $(function() {
           $(selectedArticle).slideDown(1000, "swing");
         };
 				$("#home h4").replaceWith("<h4>Click the state for the answer!</h4>");
+				//loads the answer on click of the state
 				$('article img').click(function() {
 					$('.state p').show().removeClass("quiz").addClass("visible");
 				})
 		});
+
+	//click function to reload the page
 	$('header h1').click(function() {
 		location.reload();
 	});
